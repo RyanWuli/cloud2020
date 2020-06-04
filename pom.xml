@@ -7,20 +7,22 @@
   <groupId>com.atguigu.springcloud</groupId>
   <artifactId>cloud2020</artifactId>
   <version>1.0-SNAPSHOT</version>
+
+  <packaging>pom</packaging>
+
   <modules>
     <module>cloud-provider-payment8001</module>
     <module>cloud-consumer-order80</module>
     <module>cloud-api-commons</module>
     <module>cloud-eureka-server7001</module>
-      <module>cloud-eureka-server7002</module>
+    <module>cloud-eureka-server7002</module>
     <module>cloud-provider-payment8002</module>
-      <module>cloud-provider-payment8004</module>
-      <module>cloud-consumerzk-order80</module>
-      <module>cloud-providerconsul-payment8006</module>
-      <module>cloud-consumerconsul-order80</module>
+    <module>cloud-provider-payment8004</module>
+    <module>cloud-consumerzk-order80</module>
+    <module>cloud-providerconsul-payment8006</module>
+    <module>cloud-consumerconsul-order80</module>
+    <module>cloud-consumer-feign-order80</module>
   </modules>
-  <packaging>pom</packaging>
-
   <!-- 统一管理 jar 包版本 -->
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -106,20 +108,6 @@
 
     </dependencies>
   </dependencyManagement>
-
-
-  <name>Maven</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://maven.apache.org/</url>
-  <inceptionYear>2001</inceptionYear>
-
-  <distributionManagement>
-    <site>
-      <id>website</id>
-      <url>scp://webhost.company.com/www/website</url>
-    </site>
-  </distributionManagement>
-
   <!--热启动插件-->
   <build>
     <plugins>
