@@ -39,16 +39,16 @@ public class PaymentService {
 //        } catch (Exception e) {
 //            e.printStackTrace();
 //        }
-//        try {
-//            TimeUnit.MILLISECONDS.sleep(13000);
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-        int i = 10 / 0;
+        try {
+            TimeUnit.MILLISECONDS.sleep(3000);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+//        int i = 10 / 0;
         return "线程：" + Thread.currentThread().getName() + " paymentInfo_TimeOut,id: " + id + "\t" + "~~~~(>_<)~~~~";
     }
 
     public String paymentInfo_TimeOutHandler(Integer id) {
-        return "线程：" + Thread.currentThread().getName() + " paymentInfo_TimeOut,id: " + id + "\t" + "(┬＿┬) 服务器忙或者出错了，请稍后再试。。。";
+        return "线程：" + Thread.currentThread().getName() + " paymentInfo_TimeOut,id: " + id + "\t" + "(┬＿┬) 8001服务器忙或者出错了，请稍后再试。。。";
     }
 }
