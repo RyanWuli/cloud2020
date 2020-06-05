@@ -7,8 +7,8 @@ eureka:
     register-with-eureka: false # 不向注册中心注册自己
     fetch-registry: false # 表示自己就是注册中心，我的职责就是维护服务实例，并不需要去检索服务
     service-url:
-     defaultZone: http://eureka7002.com:7002/eureka/ # 设置与 Eureka Server 交互的地址查询服务和注册服务都需要依赖这个地址（集群就是指向其他server，互相守望）
-#     defaultZone: http://eureka7001.com:7001/eureka/ # 单机模式就是自己
+#     defaultZone: http://eureka7002.com:7002/eureka/ # 设置与 Eureka Server 交互的地址查询服务和注册服务都需要依赖这个地址（集群就是指向其他server，互相守望）
+     defaultZone: http://eureka7001.com:7001/eureka/ # 单机模式就是自己
 #  server:
 #    enable-self-preservation: false # 自我保护机制默认是 true 开启， false 测试
 #    eviction-interval-timer-in-ms: 2000 # 设置心跳检测时间，两秒没有回应就注销
