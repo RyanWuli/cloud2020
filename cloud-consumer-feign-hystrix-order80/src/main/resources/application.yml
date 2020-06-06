@@ -14,6 +14,6 @@ ribbon:
   ConnectTimeout: 5000
 
 
-  feign:
-    hystrix:
-      enabled: true
+feign:
+  hystrix:
+    enabled: true
