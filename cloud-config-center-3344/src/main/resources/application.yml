@@ -18,3 +18,15 @@ spring:
           username: 972698998@qq.com
           password: zxw58975
       label: master # 读取分支
+# MQ 访问 5672
+  rabbitmq:
+    host: 47.107.139.152
+    port: 5672
+    username: guest
+    password: guest
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'bus-refresh'
