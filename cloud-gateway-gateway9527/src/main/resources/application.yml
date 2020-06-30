@@ -13,7 +13,7 @@ spring:
         - id: payment_route # 路由的id,没有规定规则但要求唯一,建议配合服务名
           #匹配后提供服务的路由地址
 #          uri: http://localhost:8001
-          uri: lb://cloud-payment-service
+          uri: lb://cloud-payment-service #需要注意的是uri的协议lb,表示启用Gateway的负载均衡功能.
           predicates:
             - Path=/payment/get/** # 断言，路径相匹配的进行路由
         - id: payment_route2
